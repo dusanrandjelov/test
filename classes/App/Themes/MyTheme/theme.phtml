@@ -11,12 +11,16 @@
 
 <?php echo $this->header;?>
 
-<div class="wrap">
-    <div class="content">
-    <?php echo $this->index; ?>
-        <?php echo $this->content; ?>
+<div class="wrap clear">
+    
+        <div class="sidenav">
+            <?php echo $this->index; ?>
+        </div>
+        <div class="content">
+            <?php echo $this->content; ?>
+        </div>
         
-    </div>
+    
 
 </div>
 <?php echo $this->footer;?>

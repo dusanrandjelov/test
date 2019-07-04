@@ -8,7 +8,6 @@ class Thems{
     public $content = "Ucitavanje..";
     public $header;
     public $footer;
-    public $index;
     //public $fivedays;
 
     public function __construct(){
@@ -21,7 +20,7 @@ class Thems{
 
         $this->load_header();
         $this->load_footer();
-        $this->load_index();
+        
         //$this->load_fivedays();
 
         $path=realpath(__DIR__.'/Themes/'.THEME.'/theme.phtml');
@@ -48,10 +47,16 @@ class Thems{
 
     }
 
-    public function load_index(){
+  
+    public function __get($key){
+        $path = $path=realpath(__DIR__.'/Themes/'.THEME.'/view/'.$key.'.phtml');
+        if(!$path){
+            die("Theme view: ".$key." not found.");
+        }
 
-        $this->load_view('index');
+        \ob_start(); include $path; $this->{$key} =  ob_get_clean();
 
+        return $this->{$key};
     }
 
    /* public function load_fivedays(){

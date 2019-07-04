@@ -12,5 +12,7 @@ class Home extends Core {
 
     public function index(){
         
+        return 'dfs asdfdasfdas fdasa';
+
     }
 }
