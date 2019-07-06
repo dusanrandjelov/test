@@ -14,7 +14,7 @@ class Forecast extends Core {
             'message' => ''
         ];
 
-        return $this->load_view('forecast/today', $data);123
+        return $this->load_view('forecast/today', $data);
 
     }
     
