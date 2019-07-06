@@ -10,11 +10,11 @@ class Forecast extends Core {
 
     public function today(){
         $data = [
-            'title' => 'Error 404',
-            'message' => 'This page isn\'t available.Soory about that<br> Try searching  for something else.'
+            'title' => '',
+            'message' => ''
         ];
 
-        return $this->load_view('forecast/today', $data);
+        return $this->load_view('forecast/today', $data);123
 
     }
     
