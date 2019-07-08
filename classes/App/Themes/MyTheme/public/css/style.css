@@ -114,4 +114,28 @@ body{
   display: block;
   clear: both;
 }
+.uv0, .uv1, .uv2 {
+  background-color: #00ff00;
+  font-weight: bold;
+}
+.uv3, .uv4, .uv5 {
+  background-color: #ffff00;
+  font-weight: bold;
+}
+.uv6, .uv7 {
+  background-color: #ff6500;
+  font-weight: bold;
+}
 
+.uv8, .uv9, .uv10 {
+  color: #fff;
+  background-color: #ff0000;
+  font-weight: bold;
+}
+ /*.index {
+  width: 400px;
+  margin-left: 3px;
+  float: left;
+  display: block;
+} 
+*/

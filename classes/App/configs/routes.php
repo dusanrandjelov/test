@@ -21,7 +21,7 @@ $route['/petdana']= [
 ];
 $route['/tridesetdana']= [
     'module' =>'App\Module\Forecast',
-    'method' =>'thirty days'
+    'method' =>'thirtydays'
 ];
 $route['/sezonska']= [
     'module' =>'App\Module\Forecast',

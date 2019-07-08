@@ -8,7 +8,6 @@ class Thems{
     public $content = "Ucitavanje..";
     public $header;
     public $footer;
-    //public $fivedays;
 
     public function __construct(){
         $bootstrap=Bootstrap::__instance();
@@ -21,7 +20,7 @@ class Thems{
         $this->load_header();
         $this->load_footer();
         
-        //$this->load_fivedays();
+      
 
         $path=realpath(__DIR__.'/Themes/'.THEME.'/theme.phtml');
         if(!$path){
@@ -59,11 +58,6 @@ class Thems{
         return $this->{$key};
     }
 
-   /* public function load_fivedays(){
-
-        $this->load_view('fivedays');
-    }
-*/
 
     private function load_view($name){
         
